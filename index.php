@@ -54,7 +54,7 @@ if (isset($_GET['code'])) {
 <?php } else {?>
       <div class="container">  
     <div class="table-responsive">  
-    <h3 align="center">Login using Google with PHP</h3>
+    <h3 align ="center">Login using Google with PHP</h3>
      <div class="box">
       <div class="form-group">
        <label for="email">Emailid</label>
