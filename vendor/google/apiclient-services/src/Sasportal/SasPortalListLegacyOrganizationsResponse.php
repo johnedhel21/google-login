@@ -19,25 +19,23 @@ namespace Google\Service\Sasportal;
 
 class SasPortalListLegacyOrganizationsResponse extends \Google\Collection
 {
-  protected $collection_key = 'organizationIds';
-  /**
-   * @var string[]
-   */
-  public $organizationIds;
+  protected $collection_key = 'organizations';
+  protected $organizationsType = SasPortalOrganization::class;
+  protected $organizationsDataType = 'array';
 
   /**
-   * @param string[]
+   * @param SasPortalOrganization[]
    */
-  public function setOrganizationIds($organizationIds)
+  public function setOrganizations($organizations)
   {
-    $this->organizationIds = $organizationIds;
+    $this->organizations = $organizations;
   }
   /**
-   * @return string[]
+   * @return SasPortalOrganization[]
    */
-  public function getOrganizationIds()
+  public function getOrganizations()
   {
-    return $this->organizationIds;
+    return $this->organizations;
   }
 }
 

@@ -23,34 +23,18 @@ class GoogleCloudDataplexV1DataScan extends \Google\Model
    * @var string
    */
   public $createTime;
-  /**
-   * @var GoogleCloudDataplexV1DataSource
-   */
-  public $data;
   protected $dataType = GoogleCloudDataplexV1DataSource::class;
   protected $dataDataType = '';
-  /**
-   * @var GoogleCloudDataplexV1DataProfileResult
-   */
-  public $dataProfileResult;
+  protected $dataDocumentationResultType = GoogleCloudDataplexV1DataDocumentationResult::class;
+  protected $dataDocumentationResultDataType = '';
+  protected $dataDocumentationSpecType = GoogleCloudDataplexV1DataDocumentationSpec::class;
+  protected $dataDocumentationSpecDataType = '';
   protected $dataProfileResultType = GoogleCloudDataplexV1DataProfileResult::class;
   protected $dataProfileResultDataType = '';
-  /**
-   * @var GoogleCloudDataplexV1DataProfileSpec
-   */
-  public $dataProfileSpec;
   protected $dataProfileSpecType = GoogleCloudDataplexV1DataProfileSpec::class;
   protected $dataProfileSpecDataType = '';
-  /**
-   * @var GoogleCloudDataplexV1DataQualityResult
-   */
-  public $dataQualityResult;
   protected $dataQualityResultType = GoogleCloudDataplexV1DataQualityResult::class;
   protected $dataQualityResultDataType = '';
-  /**
-   * @var GoogleCloudDataplexV1DataQualitySpec
-   */
-  public $dataQualitySpec;
   protected $dataQualitySpecType = GoogleCloudDataplexV1DataQualitySpec::class;
   protected $dataQualitySpecDataType = '';
   /**
@@ -61,16 +45,8 @@ class GoogleCloudDataplexV1DataScan extends \Google\Model
    * @var string
    */
   public $displayName;
-  /**
-   * @var GoogleCloudDataplexV1DataScanExecutionSpec
-   */
-  public $executionSpec;
   protected $executionSpecType = GoogleCloudDataplexV1DataScanExecutionSpec::class;
   protected $executionSpecDataType = '';
-  /**
-   * @var GoogleCloudDataplexV1DataScanExecutionStatus
-   */
-  public $executionStatus;
   protected $executionStatusType = GoogleCloudDataplexV1DataScanExecutionStatus::class;
   protected $executionStatusDataType = '';
   /**
@@ -125,6 +101,34 @@ class GoogleCloudDataplexV1DataScan extends \Google\Model
   public function getData()
   {
     return $this->data;
+  }
+  /**
+   * @param GoogleCloudDataplexV1DataDocumentationResult
+   */
+  public function setDataDocumentationResult(GoogleCloudDataplexV1DataDocumentationResult $dataDocumentationResult)
+  {
+    $this->dataDocumentationResult = $dataDocumentationResult;
+  }
+  /**
+   * @return GoogleCloudDataplexV1DataDocumentationResult
+   */
+  public function getDataDocumentationResult()
+  {
+    return $this->dataDocumentationResult;
+  }
+  /**
+   * @param GoogleCloudDataplexV1DataDocumentationSpec
+   */
+  public function setDataDocumentationSpec(GoogleCloudDataplexV1DataDocumentationSpec $dataDocumentationSpec)
+  {
+    $this->dataDocumentationSpec = $dataDocumentationSpec;
+  }
+  /**
+   * @return GoogleCloudDataplexV1DataDocumentationSpec
+   */
+  public function getDataDocumentationSpec()
+  {
+    return $this->dataDocumentationSpec;
   }
   /**
    * @param GoogleCloudDataplexV1DataProfileResult

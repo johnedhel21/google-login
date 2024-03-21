@@ -19,41 +19,37 @@ namespace Google\Service\Aiplatform;
 
 class CloudAiNlLlmProtoServicePart extends \Google\Model
 {
-  /**
-   * @var CloudAiNlLlmProtoServicePartFileData
-   */
-  public $fileData;
+  protected $documentMetadataType = CloudAiNlLlmProtoServicePartDocumentMetadata::class;
+  protected $documentMetadataDataType = '';
   protected $fileDataType = CloudAiNlLlmProtoServicePartFileData::class;
   protected $fileDataDataType = '';
-  /**
-   * @var CloudAiNlLlmProtoServiceFunctionCall
-   */
-  public $functionCall;
   protected $functionCallType = CloudAiNlLlmProtoServiceFunctionCall::class;
   protected $functionCallDataType = '';
-  /**
-   * @var CloudAiNlLlmProtoServiceFunctionResponse
-   */
-  public $functionResponse;
   protected $functionResponseType = CloudAiNlLlmProtoServiceFunctionResponse::class;
   protected $functionResponseDataType = '';
-  /**
-   * @var CloudAiNlLlmProtoServicePartBlob
-   */
-  public $inlineData;
   protected $inlineDataType = CloudAiNlLlmProtoServicePartBlob::class;
   protected $inlineDataDataType = '';
   /**
    * @var string
    */
   public $text;
-  /**
-   * @var CloudAiNlLlmProtoServicePartVideoMetadata
-   */
-  public $videoMetadata;
   protected $videoMetadataType = CloudAiNlLlmProtoServicePartVideoMetadata::class;
   protected $videoMetadataDataType = '';
 
+  /**
+   * @param CloudAiNlLlmProtoServicePartDocumentMetadata
+   */
+  public function setDocumentMetadata(CloudAiNlLlmProtoServicePartDocumentMetadata $documentMetadata)
+  {
+    $this->documentMetadata = $documentMetadata;
+  }
+  /**
+   * @return CloudAiNlLlmProtoServicePartDocumentMetadata
+   */
+  public function getDocumentMetadata()
+  {
+    return $this->documentMetadata;
+  }
   /**
    * @param CloudAiNlLlmProtoServicePartFileData
    */

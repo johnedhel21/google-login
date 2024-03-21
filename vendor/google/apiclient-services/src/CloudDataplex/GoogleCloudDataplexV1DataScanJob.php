@@ -19,28 +19,16 @@ namespace Google\Service\CloudDataplex;
 
 class GoogleCloudDataplexV1DataScanJob extends \Google\Model
 {
-  /**
-   * @var GoogleCloudDataplexV1DataProfileResult
-   */
-  public $dataProfileResult;
+  protected $dataDocumentationResultType = GoogleCloudDataplexV1DataDocumentationResult::class;
+  protected $dataDocumentationResultDataType = '';
+  protected $dataDocumentationSpecType = GoogleCloudDataplexV1DataDocumentationSpec::class;
+  protected $dataDocumentationSpecDataType = '';
   protected $dataProfileResultType = GoogleCloudDataplexV1DataProfileResult::class;
   protected $dataProfileResultDataType = '';
-  /**
-   * @var GoogleCloudDataplexV1DataProfileSpec
-   */
-  public $dataProfileSpec;
   protected $dataProfileSpecType = GoogleCloudDataplexV1DataProfileSpec::class;
   protected $dataProfileSpecDataType = '';
-  /**
-   * @var GoogleCloudDataplexV1DataQualityResult
-   */
-  public $dataQualityResult;
   protected $dataQualityResultType = GoogleCloudDataplexV1DataQualityResult::class;
   protected $dataQualityResultDataType = '';
-  /**
-   * @var GoogleCloudDataplexV1DataQualitySpec
-   */
-  public $dataQualitySpec;
   protected $dataQualitySpecType = GoogleCloudDataplexV1DataQualitySpec::class;
   protected $dataQualitySpecDataType = '';
   /**
@@ -72,6 +60,34 @@ class GoogleCloudDataplexV1DataScanJob extends \Google\Model
    */
   public $uid;
 
+  /**
+   * @param GoogleCloudDataplexV1DataDocumentationResult
+   */
+  public function setDataDocumentationResult(GoogleCloudDataplexV1DataDocumentationResult $dataDocumentationResult)
+  {
+    $this->dataDocumentationResult = $dataDocumentationResult;
+  }
+  /**
+   * @return GoogleCloudDataplexV1DataDocumentationResult
+   */
+  public function getDataDocumentationResult()
+  {
+    return $this->dataDocumentationResult;
+  }
+  /**
+   * @param GoogleCloudDataplexV1DataDocumentationSpec
+   */
+  public function setDataDocumentationSpec(GoogleCloudDataplexV1DataDocumentationSpec $dataDocumentationSpec)
+  {
+    $this->dataDocumentationSpec = $dataDocumentationSpec;
+  }
+  /**
+   * @return GoogleCloudDataplexV1DataDocumentationSpec
+   */
+  public function getDataDocumentationSpec()
+  {
+    return $this->dataDocumentationSpec;
+  }
   /**
    * @param GoogleCloudDataplexV1DataProfileResult
    */

@@ -19,10 +19,6 @@ namespace Google\Service\BlockchainNodeEngine;
 
 class EthereumDetails extends \Google\Model
 {
-  /**
-   * @var EthereumEndpoints
-   */
-  public $additionalEndpoints;
   protected $additionalEndpointsType = EthereumEndpoints::class;
   protected $additionalEndpointsDataType = '';
   /**
@@ -36,19 +32,11 @@ class EthereumDetails extends \Google\Model
   /**
    * @var string
    */
-  public $beaconFeeRecipient;
-  /**
-   * @var string
-   */
   public $consensusClient;
   /**
    * @var string
    */
   public $executionClient;
-  /**
-   * @var GethDetails
-   */
-  public $gethDetails;
   protected $gethDetailsType = GethDetails::class;
   protected $gethDetailsDataType = '';
   /**
@@ -59,10 +47,6 @@ class EthereumDetails extends \Google\Model
    * @var string
    */
   public $nodeType;
-  /**
-   * @var ValidatorConfig
-   */
-  public $validatorConfig;
   protected $validatorConfigType = ValidatorConfig::class;
   protected $validatorConfigDataType = '';
 
@@ -107,20 +91,6 @@ class EthereumDetails extends \Google\Model
   public function getApiEnableDebug()
   {
     return $this->apiEnableDebug;
-  }
-  /**
-   * @param string
-   */
-  public function setBeaconFeeRecipient($beaconFeeRecipient)
-  {
-    $this->beaconFeeRecipient = $beaconFeeRecipient;
-  }
-  /**
-   * @return string
-   */
-  public function getBeaconFeeRecipient()
-  {
-    return $this->beaconFeeRecipient;
   }
   /**
    * @param string
